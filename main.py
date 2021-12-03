@@ -114,9 +114,9 @@ while True:
 		string_2 = 1
 
 		if mask > withoutMask:
-			board.digital[13].write(1)
+			board.digital[13].write(0) #Turn LED OFF if facemask is detected
 		else:
-			board.digital[13].write(0)
+			board.digital[13].write(1) #Turn LED ON if person is without facemask
 
 
 
